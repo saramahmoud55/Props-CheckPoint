@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import shafik from'./Shafik.jpg'
+import Profile from './Profile/profile';
 
 function App() {
+  const styleObject ={fontFamily:"GoldmanBold" ,textAlign:"center",margin:"30px",color:"#000C66"}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styleObject}>
+    <Profile fullName="Sara Mahmoud" 
+    bio="I'm a software engineer"
+     profession="Frontend engineer"
+      src={shafik}/>
     </div>
   );
 }
